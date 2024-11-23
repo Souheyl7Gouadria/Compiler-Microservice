@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: Compiler
+
+server:
+  port: 8082
+
+
+judge:
+  baseUrl: ${JUDGE_URL:http://localhost:2358}
+
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          client:
+            RestTemplate=DEBUG:
